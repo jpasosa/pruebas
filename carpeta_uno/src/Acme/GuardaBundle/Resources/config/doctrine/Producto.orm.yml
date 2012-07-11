@@ -1,0 +1,26 @@
+Acme\GuardaBundle\Entity\Producto:
+  type: entity
+  repositoryClass: Acme\GuardaBundle\Repository\ProductoRepository
+  table: producto
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    nombre:
+      type: string
+      length: 500
+    precio:
+      type: decimal
+      scale: 2
+    descripcion:
+      type: text
+      notnull: false
+  manyToOne:
+          categoria:
+              targetEntity: Categoria
+              inversedBy: productos
+              joinColumn:
+                  name: categoria_id
+                  referencedColumnName: id
+

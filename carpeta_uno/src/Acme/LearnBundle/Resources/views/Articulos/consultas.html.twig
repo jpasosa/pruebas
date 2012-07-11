@@ -1,0 +1,30 @@
+
+<h1>Listado de las consultas obtenidas</h1>
+<h2>{{ help }}</h2>
+<h2>{{ text_query }}</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Content</th>
+        <th>Tags</th>
+        <th>Created</th>
+        <th>Updated</th>
+        <th>Slug</th>
+        <th>Category</th>
+    </tr>
+    {% for art in articulos %}
+        <tr>
+            <td>{{ art.id }}</td>
+            <td>{{ art.title }}</td>
+            <td>{{ art.author }}</td>
+            <td>{{ art.content }}</td>
+            <td>{{ art.tags }}</td>
+            <td> </td>
+            <td> </td>
+            <td>{{ art.slug }}</td>
+            <td>{{ art.category }}</td>
+        </tr>
+    {% endfor %}
+</table>

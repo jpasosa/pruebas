@@ -1,0 +1,14 @@
+{% extends 'AcmeGuardaBundle:Default:base.html.twig' %}
+
+{% block body %}
+    <h2> Muestro los ID de todos los productos </h2>
+        <li> id:          {{ producto.id }} </li>
+        <li> nombre:      {{ producto.nombre }} </li>
+        <li> precio:      {{ producto.precio }} </li>
+        <li> descripcion: {{ producto.descripcion }} </li>
+        <li> Nombre CATEGORIA: {{ categoria }} </li>
+    <h3> FIN </h3>
+
+{% endblock %}
+        
+        

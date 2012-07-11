@@ -1,0 +1,16 @@
+{% extends 'AcmeGuardaBundle:Default:base.html.twig' %}
+
+{% block body %}
+    <h2> Viejo registro:  </h2>
+        <li> id:          {{ old_id_producto }} </li>
+        <li> nombre:      {{ old_nombre_producto }} </li>
+    
+    <h2> Nuevo registro:  </h2>
+        <li> id:          {{ producto.id }} </li>
+        <li> nombre:      {{ producto.nombre }} </li>
+        <li> precio:      {{ producto.precio }} </li>
+        <li> descripcion: {{ producto.descripcion }} </li>
+
+{% endblock %}
+        
+        

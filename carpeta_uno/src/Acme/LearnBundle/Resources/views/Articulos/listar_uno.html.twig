@@ -1,0 +1,11 @@
+<h1>Articulo con ID {{ articulo.id }}</h1>
+<ul>
+    <li>Titulo: {{ articulo.title }}</li>
+</ul>
+
+<ul>
+	{% for c in comentarios %}
+        <li> {{ c.content }} </li>
+	{% endfor %}
+</ul>
+

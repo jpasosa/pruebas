@@ -1,0 +1,39 @@
+#AcmeGuardaBundle_homepage:
+#    pattern:  /hello/{name}
+#    defaults: { _controller: AcmeGuardaBundle:Default:index }
+
+
+_homepage:
+    pattern:  /
+    defaults: { _controller: AcmeGuardaBundle:Default:index }
+
+# Creo un registro
+_test_orm_create:
+    pattern:  /create
+    defaults: { _controller: AcmeGuardaBundle:Default:create }
+
+# Muestro un registro de la base
+_test_orm_show:
+    pattern:  /show/{id}
+    defaults: { _controller: AcmeGuardaBundle:Default:show, id: 1 }
+
+# Hacer una actualizacion
+_test_orm_update:
+    pattern:  /update/{id}
+    defaults: { _controller: AcmeGuardaBundle:Default:update, id: 1 }
+
+# Consulta a la base de datos
+_test_orm_consult:
+    pattern:  /consult
+    defaults: { _controller: AcmeGuardaBundle:Default:consult }    
+
+# Guardando entidades relacionadas
+_test_orm_save_relation:
+    pattern:  /saverelation
+    defaults: { _controller: AcmeGuardaBundle:Default:saverelation }
+
+# Recuperando objetos relacionadas
+_test_orm_load_relation:
+    pattern:  /loadrelation/{id}
+    defaults: { _controller: AcmeGuardaBundle:Default:loadrelation, id: 1 }
+    

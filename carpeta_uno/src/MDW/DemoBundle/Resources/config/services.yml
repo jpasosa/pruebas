@@ -1,0 +1,7 @@
+parameters:
+#    mdw_demo.example.class: MDW\DemoBundle\Example
+
+services:
+#    mdw_demo.example:
+#        class: %mdw_demo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

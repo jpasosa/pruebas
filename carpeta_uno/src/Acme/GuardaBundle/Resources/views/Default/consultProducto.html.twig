@@ -1,0 +1,14 @@
+{% extends 'AcmeGuardaBundle:Default:base.html.twig' %}
+
+{% block body %}
+    {% for pr in productos %}
+    <h2> Registro encontrado:  </h2>
+        <li> id:          {{ pr.id }} </li>
+        <li> nombre:      {{ pr.nombre }} </li>
+        <li> precio:      {{ pr.precio }} </li>
+        <li> descripcion: {{ pr.descripcion }} </li>
+    {% endfor %}
+    asdasddsa
+{% endblock %}
+        
+        

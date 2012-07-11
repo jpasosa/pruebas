@@ -1,0 +1,15 @@
+{% extends 'AcmeGuardaBundle:Default:base.html.twig' %}
+
+{% block body %}
+    <h2> Registros agregados:  </h2>
+    <h3> TABLA: PRODUCTOS </h3>
+    <li> id:          {{ producto.id }} </li>
+    <li> nombre:      {{ producto.nombre }} </li>
+    <li> precio:      {{ producto.precio }} </li>
+    <li> descripcion: {{ producto.descripcion }} </li>
+	<h3> TABLA: CATEGORIAS </h3>
+    <li> id:          {{ categoria.id }} </li>
+    <li> nombre:      {{ categoria.nombre }} </li>
+{% endblock %}
+        
+        

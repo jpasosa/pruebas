@@ -1,0 +1,4 @@
+Acme\GuardaBundle\Entity\Autor:
+  properties:
+    nombre:
+    - NotBlank: ~

@@ -1,0 +1,39 @@
+articulo_listar_uno:
+    pattern:  /articulos/listar_uno/{id}
+    defaults: { _controller: AcmeLearnBundle:Articulos:listar_uno }
+
+articulo_listar:
+    pattern:  /articulos/listar
+    defaults: { _controller: AcmeLearnBundle:Articulos:listar }
+
+articulo_crear:
+    pattern:  /articulos/crear
+    defaults: { _controller: AcmeLearnBundle:Articulos:crear }
+
+articulo_editar:
+    pattern:  /articulos/editar/{id}
+    defaults: { _controller: AcmeLearnBundle:Articulos:editar }
+
+articulo_visualizar:
+    pattern:  /articulos/visualizar/{id}
+    defaults: { _controller: AcmeLearnBundle:Articulos:visualizar }
+
+articulo_borrar:
+    pattern:  /articulos/borrar/{id}
+    defaults: { _controller: AcmeLearnBundle:Articulos:borrar }
+
+articulo_consultas:
+    pattern:  /articulos/consultas/{choice}
+    defaults: { _controller: AcmeLearnBundle:Articulos:consultas, choice: 1 }
+
+articulo_new:
+    pattern: /articulos/new
+    defaults: { _controller: AcmeLearnBundle:Articulos:new }
+
+comentario_listar:
+    pattern:  /comentario/listar
+    defaults: { _controller: AcmeLearnBundle:Comments:listar }
+
+comentario_crear:
+    pattern:  /comentario/crear
+    defaults: { _controller: AcmeLearnBundle:Comments:crear }

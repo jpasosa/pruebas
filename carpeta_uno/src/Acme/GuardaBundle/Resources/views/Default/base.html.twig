@@ -1,0 +1,47 @@
+<html>
+
+<header>
+    <title> {% block title %} Menu Principal {% endblock%} </title>
+	{% block stylesheets %}
+        <link href="{{ asset('bundles/GuardaBundle/css/main.css') }}" type="text/css" rel="stylesheet" />
+	{% endblock %}
+    <h1>
+        <a href="{{ path('_homepage') }}"> SYMFONY 2 </a>
+    </h1>
+</header>
+
+<body>	       
+    <p>Tenes ganas de aprenderlo?</p>
+    <p> -- </p>
+    <a href="{{ path('_homepage') }}"> go Home </a>
+	
+	
+	
+	{% block navigation %}
+	    <nav>
+	        <ul class="navigation">
+	            <li> <a href="{{ path('_test_orm_create') }}"> Agrega un registro en la base productos </a> </li>
+	            <li> <a href="{{ path('_test_orm_show', {'id': id_azar }) }}"> Muestro un registro al azar de la base de datos </a> </li>
+	            <li> <a href="{{ path('_test_orm_update', {'id': id_azar}) }}"> Hace una actualización de la base de datos </a> </li>
+	            <li> <a href="{{ path('_test_orm_consult') }}"> Hace una consulta a la base de datos </a> </li>
+	            <li> <a href="{{ path('_test_orm_save_relation') }}"> Guardando entidades relacionadas </a> </li>
+	            <li> <a href="{{ path('_test_orm_load_relation', {'id': id_azar}) }}"> Recupero objetos relacionadas </a> </li>
+	        </ul>
+	    </nav>
+	{% endblock %}
+	
+	
+	
+	{% block body %}
+	
+	{% endblock %}
+	
+	{% block footer %}
+	    <p style="font-size: 11px;">
+	        -- aquí, Juan Pablo Sosa, reportandose, learning Symfony2. :) Tel: 04333.1582728272 ---
+	    </p>
+	{% endblock %}
+
+</body>
+
+</html>

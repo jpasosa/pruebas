@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* RESET */
+html {
+  color: #000;
+  line-height: 20px;
+}
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,table,caption,tbody,tfoot,thead,tr,th,td {
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  /*  outline: none;*/
+  padding: 0;
+  text-decoration: none;
+  /*vertical-align: baseline;*/
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul.navigation {
+	font-size: 13px;
+	font-family: arial;
+}

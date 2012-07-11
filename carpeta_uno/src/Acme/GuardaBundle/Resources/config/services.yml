@@ -1,0 +1,7 @@
+parameters:
+#    acme_guarda.example.class: Acme\GuardaBundle\Example
+
+services:
+#    acme_guarda.example:
+#        class: %acme_guarda.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
