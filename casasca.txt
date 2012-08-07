@@ -1,0 +1,17 @@
+este es un ejemplo del uso de GIT.
+Un gran controlador de versiones.
+
+Ahora lo voy a probar en el sublime text 2
+
+
+akjsansj
+
+sdcsdcscsdcdsc
+sdcsdcdsc
+
+
+Esto ultimo es nuevo y lo quiero agregar.
+
+
+
+
